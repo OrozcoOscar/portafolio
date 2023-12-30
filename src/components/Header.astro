@@ -1,0 +1,75 @@
+<script>
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector("header");
+    header?.classList.toggle("scrolled", window.scrollY > 0);
+  });
+</script>
+<header
+  class={`
+    sticky top-0
+    w-full 
+    mx-auto
+  `}
+>
+  <div
+    class="flex justify-between
+  mx-auto
+  py-5
+  px-2
+  z-10
+              items-center
+              w-full xl:w-[1120px]"
+  >
+    <div class="flex items-center gap-x-4">
+      <img
+        class="rounded-full size-12"
+        src="/oscarorozco.webp"
+        alt="Oscar Orozco"
+      />
+      <div class="user_name">Oscar Orozco</div>
+    </div>
+    <nav
+      class={`
+      px-2 py-1
+      flex flex-row
+     
+    `}
+    >
+      <a
+        class="hover:bg-white/10 rounded-full px-3 transition"
+        href="#experiencia">Experiencia</a
+      >
+      <a
+        class="hover:bg-white/10 rounded-full px-3 transition"
+        href="#proyectos">Proyectos</a
+      >
+      <a 
+      class="hover:bg-white/10 rounded-full px-3 transition" 
+      href="#sobre-mi"
+        >Sobre mí</a
+      >
+    </nav>
+  </div>
+</header>
+
+<style>
+  header {
+    z-index: 99;
+    transition: background-color 0.3s ease-in-out; /* Agrega transición para suavizar el cambio de color de fondo */
+  }
+  .user_name {
+    opacity: 0;
+    transition: 1s;
+  }
+  header.scrolled {
+    background-color: #212031;
+    background: radial-gradient(
+      ellipse_80%_80%_at_50%_-20%,
+      rgba(120, 119, 198, 0.3),
+      rgba(255, 255, 255, 0)
+    );
+    & .user_name {
+      opacity: 1;
+    }
+  }
+</style>

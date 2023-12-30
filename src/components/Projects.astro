@@ -1,0 +1,127 @@
+---
+import CSS from "./icons/CSS.astro"
+import HTML from "./icons/HTML.astro"
+import JS from "./icons/JS.astro"
+import Link from "./icons/Link.astro"
+import MONGO_DB from "./icons/MONGO_DB.astro"
+import MYSQL from "./icons/MYSQL.astro"
+import NextJS from "./icons/NextJS.astro"
+import NodeJS from "./icons/NodeJS.astro"
+import PHP from "./icons/PHP.astro"
+import REACT from "./icons/REACT.astro"
+import Tailwind from "./icons/Tailwind.astro"
+import MUI from "./icons/materialui.astro"
+const TAGS = {
+  PWA: {
+    name: "PWA",
+    class: "bg-black text-white",
+    icon:null
+  },
+  NODEJS: {
+    name: "Node.js",
+    class: "bg-black text-white",
+    icon: NodeJS,
+  },
+  MONGO_DB: {
+    name: "Mongo Db",
+    class: "bg-black text-white",
+    icon: MONGO_DB,
+  },
+  HTML: {
+    name: "HTML",
+    class: "bg-black text-white",
+    icon: HTML,
+  },
+  CSS: {
+    name: "CSS",
+    class: "bg-black text-white",
+    icon: CSS,
+  },
+  JS: {
+    name: "JavaScript",
+    class: "bg-black text-white",
+    icon: JS,
+  },
+  MYSQL: {
+    name: "MYSQL",
+    class: "bg-black text-white",
+    icon: MYSQL,
+  },
+  NEXT: {
+    name: "Next.js",
+    class: "bg-black text-white",
+    icon: NextJS,
+  },
+  TAILWIND: {
+    name: "Tailwind CSS",
+    class: "bg-black text-white",
+    icon: Tailwind,
+  },
+  PHP: {
+    name: "PHP",
+    class: "bg-[#4F5D95] text-white",
+    icon: PHP,
+  },
+  REACT: {
+    name: "React.js",
+    class: "bg-black text-white",
+    icon: REACT,
+  },
+  MUI: {
+    name: "MUI",
+    class: "bg-black text-white",
+    icon: MUI,
+  },
+}
+const PROJECTS = [
+  {
+    title: "ModCol - Aplicacion para modelado colaborativo",
+    description:`La aplicación fue creada con el propósito de desarrollar una app capaz de modelar diferentes tipos de diagramas, entre ellos, diagramas de clase, diagramas de secuencia y diagramas de casos de uso. Esta aplicación fue presentada como proyecto de curso en la materia de ISI (Ingeniería de Sistemas de Información).`,
+    github: "https://github.com/OrozcoOscar/ModCol",
+    image: "/projects/modcol.webp",
+    tags: [TAGS.HTML,TAGS.CSS,TAGS.JS, TAGS.PHP,TAGS.MYSQL,],
+  },
+  {
+    title: "UniColectivo - Aplicacion de movilidad",
+    description:`El propósito de esta aplicación es proporcionar a los estudiantes universitarios un medio para conocer e interactuar con otros estudiantes que vivan en el mismo sector. El objetivo es permitirles compartir transporte y así reducir los costos asociados. Esto se logra mediante pequeñas publicaciones que notifican a otros usuarios, quienes pueden acceder a la conversación si están interesados.`,
+    image: "/projects/unicolectivo.webp",
+    tags: [TAGS.PWA,TAGS.HTML,TAGS.CSS,TAGS.JS, TAGS.NODEJS,TAGS.MONGO_DB],
+  },
+  {
+    title: "ChordStandard - Aplicacion para musicos",
+    href:"https://chordstandard.onrender.com/",
+    description:`Debido a la gran diversidad que existe al momento de escribir los acordes de una canción, se planteó esta app como una posible solución, definiendo un estándar simple y fácil de entender donde el usuario puede ver el acorde y el tiempo representado por símbolos encima de él.`,
+    image: "/projects/chordstandard.webp",
+    tags: [TAGS.PWA,TAGS.REACT,TAGS.MUI, TAGS.NODEJS,TAGS.MONGO_DB],
+  },
+]
+---
+
+{
+  PROJECTS.map(({ image, title, description, tags,href }) => (
+    <article class="mb-20">
+      <div class="flex justify-between">
+        <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3> {href && <a href={href} target="_blank"  rel="noopener"><Link /></a>}
+      </div>
+      <p class="text-lg mb-4 text-pretty">{description}</p>
+      <ul class="flex gap-x-2 flex-row mb-2">
+        {tags.map((tag) => (
+          <li>
+            <span
+              class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
+            >
+              {tag?.icon && <tag.icon class="size-4" />}
+              {tag.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <img
+        loading="lazy"
+        class="rounded shadow-2xl shadow-white/10 aspect-video"
+        src={image}
+        alt={`Captura de pantalla del proyecto ${image}`}
+      />
+    </article>
+  ))
+}

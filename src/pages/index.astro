@@ -1,0 +1,75 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Badge from "../components/Badge.astro"
+import SectionContainer from "../components/SectionContainer.astro"
+import LinkedInIcon from "../components/icons/LinkedIn.astro"
+import SocialPill from "../components/SocialPill.astro"
+import GitHubIcon from "../components/icons/GitHub.astro"
+import MailIcon from "../components/icons/Mail.astro"
+import Experience from "../components/Experience.astro"
+import Briefcase from "../components/icons/Briefcase.astro"
+import CodeIcon from "../components/icons/Code.astro"
+import Projects from "../components/Projects.astro"
+---
+
+<Layout
+  title="Porfolio de Oscar Orozco - Desarrollador y Programador Web con mas de 6 años de experiencia"
+  description="Contrata a Oscar Orozco para crear tu aplicación web. Desarrollador Web FullStack. Especializado en crear aplicaciones únicas."
+>
+  <main class="px-4">
+    <SectionContainer class="py-20 pb-32" id="sobre-mi">
+      <h1
+        class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
+      >
+        Hey, soy Oscar Orozco <a
+          href="https://linkedin.com/in/oscarorozcopacheco"
+          target="_blank"
+          rel="noopener"
+          class="flex justify-center items-center"
+        >
+          <Badge>Disponible pa' chambear</Badge>
+        </a>
+      </h1>
+      <h3 class="text-gray-400">Ingeniero de sistemas</h3>
+      <h2 class="text-xl lg:text-2xl text-balance max-w-[700px]">
+        <span>+6 años de experiencia.</span><span class="text-yellow-200">
+          Desarrollador Web FullStack.</span
+        ><span class="text-red-200"> De Cartagena, Colombia.</span>
+        <span class="text-sky-200"
+          >Especializado en resolver desafíos web para crear soluciones efectivas y únicas.
+           
+      </h2>
+
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href="https://linkedin.com/in/oscarorozcopacheco">
+          <LinkedInIcon class="size-4 md:size-6" />
+           LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/OrozcoOscar">
+          <GitHubIcon class="size-4 md:size-6" />
+           GitHub
+        </SocialPill>
+        <SocialPill href="mailto:oorozcojob@gmail.com">
+          <MailIcon class="size-4 md:size-6" />
+           oorozcojob@gmail.com
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="experiencia">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <Briefcase class="size-7" />
+         Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
+        <CodeIcon class="size-7" />
+         Proyectos
+      </h2>
+      <Projects />
+    </SectionContainer>
+  </main>
+</Layout>
