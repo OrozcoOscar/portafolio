@@ -1,4 +1,4 @@
-# Portafolio de [Tu Nombre]
+# Portafolio
 
 ![Vista previa del Portafolio](https://github.com/OrozcoOscar/portafolio/assets/88407386/fc25c2f5-8381-443c-b9e2-9a2048a4d1f0)
 
