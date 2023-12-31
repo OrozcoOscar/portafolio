@@ -1,5 +1,15 @@
-# Porfolio para programadores y desarrolladores
+# Portafolio de [Tu Nombre]
 
-https://659186e3b4d60c23f62e60c5--sparkling-hotteok-b4f654.netlify.app/
+![Vista previa del Portafolio](https://github.com/OrozcoOscar/portafolio/assets/88407386/fc25c2f5-8381-443c-b9e2-9a2048a4d1f0)
 
-![image](https://github.com/OrozcoOscar/portafolio/assets/88407386/6cca28f5-e397-40c3-bce8-d46518e7dad4)
+## Descripción
+Este es mi portafolio personal, donde muestro algunos de mis proyectos y trabajos destacados. Explora a continuación para obtener una visión general de mis habilidades y experiencias en desarrollo.
+
+## Enlace al Portafolio
+[¡Visita mi portafolio en línea!](https://659186e3b4d60c23f62e60c5--sparkling-hotteok-b4f654.netlify.app/)
+
+
+
+## Contacto
+Si quieres contactarme, puedes hacerlo a través de [correo electrónico](mailto:oorozcojob@gmail.com) o [LinkedIn](https://www.linkedin.com/in/oscarorozcopacheco/).
+
