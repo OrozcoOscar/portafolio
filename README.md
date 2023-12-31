@@ -1,3 +1,5 @@
 # Porfolio para programadores y desarrolladores
 
-![Captura-2023-12-26 001984](https://github.com/midudev/portfolio.dev/assets/1561955/3978b101-ffb5-434b-bd1a-e218eb542e1f)
+https://659186e3b4d60c23f62e60c5--sparkling-hotteok-b4f654.netlify.app/
+
+![image](https://github.com/OrozcoOscar/portafolio/assets/88407386/6cca28f5-e397-40c3-bce8-d46518e7dad4)
