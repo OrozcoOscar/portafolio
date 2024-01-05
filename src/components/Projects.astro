@@ -1,22 +1,22 @@
 ---
-import CSS from "./icons/CSS.astro"
-import HTML from "./icons/HTML.astro"
-import JS from "./icons/JS.astro"
-import Link from "./icons/Link.astro"
-import MONGO_DB from "./icons/MONGO_DB.astro"
-import MYSQL from "./icons/MYSQL.astro"
-import NextJS from "./icons/NextJS.astro"
-import NodeJS from "./icons/NodeJS.astro"
-import PHP from "./icons/PHP.astro"
-import REACT from "./icons/REACT.astro"
-import Tailwind from "./icons/Tailwind.astro"
-import Electron from "./icons/electron.astro"
-import MUI from "./icons/materialui.astro"
+import CSS from "./icons/CSS.astro";
+import HTML from "./icons/HTML.astro";
+import JS from "./icons/JS.astro";
+import Link from "./icons/Link.astro";
+import MONGO_DB from "./icons/MONGO_DB.astro";
+import MYSQL from "./icons/MYSQL.astro";
+import NextJS from "./icons/NextJS.astro";
+import NodeJS from "./icons/NodeJS.astro";
+import PHP from "./icons/PHP.astro";
+import REACT from "./icons/REACT.astro";
+import Tailwind from "./icons/Tailwind.astro";
+import Electron from "./icons/electron.astro";
+import MUI from "./icons/materialui.astro";
 const TAGS = {
   PWA: {
     name: "PWA",
     class: "bg-black text-white",
-    icon:null
+    icon: null,
   },
   NODEJS: {
     name: "Node.js",
@@ -78,43 +78,84 @@ const TAGS = {
     class: "bg-black text-white",
     icon: Electron,
   },
-}
+};
 const PROJECTS = [
   {
     title: "ModCol - Aplicacion para modelado colaborativo",
-    description:`La aplicación fue creada con el propósito de desarrollar una app capaz de modelar diferentes tipos de diagramas, entre ellos, diagramas de clase, diagramas de secuencia y diagramas de casos de uso. Esta aplicación fue presentada como proyecto de curso en la materia de ISI (Ingeniería de Sistemas de Información).`,
+    description: `La aplicación fue creada con el propósito de desarrollar una app capaz de modelar diferentes tipos de diagramas, entre ellos, diagramas de clase, diagramas de secuencia y diagramas de casos de uso. Esta aplicación fue presentada como proyecto de curso en la materia de ISI (Ingeniería de Sistemas de Información).`,
     github: "https://github.com/OrozcoOscar/ModCol",
     image: "./projects/modcol.webp",
-    tags: [TAGS.HTML,TAGS.CSS,TAGS.JS, TAGS.PHP,TAGS.MYSQL,],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.PHP, TAGS.MYSQL],
   },
   {
     title: "UniColectivo - Aplicacion de movilidad",
-    description:`El propósito de esta aplicación es proporcionar a los estudiantes universitarios un medio para conocer e interactuar con otros estudiantes que vivan en el mismo sector. El objetivo es permitirles compartir transporte y así reducir los costos asociados. Esto se logra mediante pequeñas publicaciones que notifican a otros usuarios, quienes pueden acceder a la conversación si están interesados.`,
+    description: `El propósito de esta aplicación es proporcionar a los estudiantes universitarios un medio para conocer e interactuar con otros estudiantes que vivan en el mismo sector. El objetivo es permitirles compartir transporte y así reducir los costos asociados. Esto se logra mediante pequeñas publicaciones que notifican a otros usuarios, quienes pueden acceder a la conversación si están interesados.`,
     image: "./projects/unicolectivo.webp",
-    tags: [TAGS.PWA,TAGS.HTML,TAGS.CSS,TAGS.JS, TAGS.NODEJS,TAGS.MONGO_DB],
+    tags: [TAGS.PWA, TAGS.HTML, TAGS.CSS, TAGS.JS, TAGS.NODEJS, TAGS.MONGO_DB],
   },
   {
-    title: "Colemna - Aplicación de escritorio para gestión de inventario y ventas",
-    href:"https://orozcooscar.github.io/colmena/",
-    description:`Colmena es una aplicación de escritorio diseñada para facilitar la gestión de inventario y ventas. La plataforma proporciona a los usuarios informes detallados sobre las ventas realizadas, incluyendo detalles como el cliente, la cantidad y el monto. Además, Colmena ofrece funcionalidades adicionales, como la capacidad de generar cotizaciones.`,
+    title:
+      "Colemna - Aplicación de escritorio para gestión de inventario y ventas",
+    href: "https://orozcooscar.github.io/colmena/",
+    description: `Colmena es una aplicación de escritorio diseñada para facilitar la gestión de inventario y ventas. La plataforma proporciona a los usuarios informes detallados sobre las ventas realizadas, incluyendo detalles como el cliente, la cantidad y el monto. Además, Colmena ofrece funcionalidades adicionales, como la capacidad de generar cotizaciones.`,
     image: "./projects/colmena.webp",
-    tags: [TAGS.REACT,TAGS.MUI,TAGS.ELECTRON],
-  }, 
+    tags: [TAGS.REACT, TAGS.MUI, TAGS.ELECTRON],
+  },
   {
     title: "ChordStandard - Aplicacion para musicos",
-    href:"https://chordstandard.onrender.com/",
-    description:`Debido a la gran diversidad que existe al momento de escribir los acordes de una canción, se planteó esta app como una posible solución, definiendo un estándar simple y fácil de entender donde el usuario puede ver el acorde y el tiempo representado por símbolos encima de él.`,
+    href: "https://chordstandard.onrender.com/",
+    description: `Debido a la gran diversidad que existe al momento de escribir los acordes de una canción, se planteó esta app como una posible solución, definiendo un estándar simple y fácil de entender donde el usuario puede ver el acorde y el tiempo representado por símbolos encima de él.`,
     image: "./projects/chordstandard.webp",
-    tags: [TAGS.PWA,TAGS.REACT,TAGS.MUI, TAGS.NODEJS,TAGS.MONGO_DB],
+    tags: [TAGS.PWA, TAGS.REACT, TAGS.MUI, TAGS.NODEJS, TAGS.MONGO_DB],
   },
-]
+  {
+    title: "Dolar",
+    href: "https://github.com/OrozcoOscar/Dolar",
+    description:
+      "Una biblioteca en JavaScript diseñada para facilitar el uso de Canvas y la gestión del DOM, ofreciendo diversas funciones útiles.",
+    tags: [TAGS.JS],
+  },
+  {
+    title: "useFormValidate",
+    href: "https://www.npmjs.com/package/use-form-validate",
+    description:
+      "Este hook de React proporciona funcionalidades para gestionar el estado y la validación de formularios de manera sencilla.",
+    tags: [TAGS.JS, TAGS.REACT],
+  },
+  {
+    title: "Gestor de IndexedDB",
+    href: "https://www.npmjs.com/package/indexed-db-module",
+    description:
+      "El Gestor de IndexedDB es un módulo que simplifica la gestión de la base de datos IndexedDB en aplicaciones JavaScript.",
+    tags: [TAGS.JS, TAGS.REACT],
+  },
+  {
+    title: "Table",
+    href: "https://github.com/OrozcoOscar/Table",
+    description:
+      "Este proyecto proporciona un método que permite la creación de tablas dinámicas.",
+    tags: [TAGS.JS],
+  },
+  {
+    title: "MakeAudioRecord",
+    href: "https://github.com/OrozcoOscar/MakeAudioRecord",
+    description:
+      "Este proyecto proporciona un método que permite controlar y manipular una grabación mediante el micrófono.",
+    tags: [TAGS.JS],
+  },
+];
 ---
 
 {
-  PROJECTS.map(({ image, title, description, tags,href }) => (
+  PROJECTS.map(({ image, title, description, tags, href }) => (
     <article class="mb-20">
       <div class="flex justify-between">
-        <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3> {href && <a href={href} target="_blank"  rel="noopener"><Link /></a>}
+        <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>{" "}
+        {href && (
+          <a href={href} target="_blank" rel="noopener">
+            <Link />
+          </a>
+        )}
       </div>
       <p class="text-lg mb-4 text-pretty">{description}</p>
       <ul class="flex gap-x-2 flex-row mb-2">
@@ -129,12 +170,14 @@ const PROJECTS = [
           </li>
         ))}
       </ul>
-      <img
-        loading="lazy"
-        class="rounded shadow-2xl shadow-white/10 aspect-video"
-        src={image}
-        alt={`Captura de pantalla del proyecto ${image}`}
-      />
+      {image && (
+        <img
+          loading="lazy"
+          class="rounded shadow-2xl shadow-white/10 aspect-video"
+          src={image}
+          alt={`Captura de pantalla del proyecto ${image}`}
+        />
+      )}
     </article>
   ))
 }
