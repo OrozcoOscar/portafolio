@@ -7,8 +7,7 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "deploy":"git subtree push --prefix dist origin gh-pages"
+    "astro": "astro"
   },
   "dependencies": {
     "@astrojs/check": "0.3.4",
