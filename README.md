@@ -6,7 +6,7 @@
 Este es mi portafolio personal, donde muestro algunos de mis proyectos y trabajos destacados. Explora a continuación para obtener una visión general de mis habilidades y experiencias en desarrollo.
 
 ## Enlace al Portafolio
-[¡Visita mi portafolio en línea!](https://659186e3b4d60c23f62e60c5--sparkling-hotteok-b4f654.netlify.app/)
+[¡Visita mi portafolio en línea!](https://portafolio-oscar-orozco.netlify.app/)
 
 
 
