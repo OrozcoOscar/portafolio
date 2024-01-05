@@ -10,6 +10,7 @@ import NodeJS from "./icons/NodeJS.astro"
 import PHP from "./icons/PHP.astro"
 import REACT from "./icons/REACT.astro"
 import Tailwind from "./icons/Tailwind.astro"
+import Electron from "./icons/electron.astro"
 import MUI from "./icons/materialui.astro"
 const TAGS = {
   PWA: {
@@ -72,6 +73,11 @@ const TAGS = {
     class: "bg-black text-white",
     icon: MUI,
   },
+  ELECTRON: {
+    name: "Electron",
+    class: "bg-black text-white",
+    icon: Electron,
+  },
 }
 const PROJECTS = [
   {
@@ -87,6 +93,13 @@ const PROJECTS = [
     image: "./projects/unicolectivo.webp",
     tags: [TAGS.PWA,TAGS.HTML,TAGS.CSS,TAGS.JS, TAGS.NODEJS,TAGS.MONGO_DB],
   },
+  {
+    title: "Colemna - Aplicación de escritorio para gestión de inventario y ventas",
+    href:"https://orozcooscar.github.io/colmena/",
+    description:`Colmena es una aplicación de escritorio diseñada para facilitar la gestión de inventario y ventas. La plataforma proporciona a los usuarios informes detallados sobre las ventas realizadas, incluyendo detalles como el cliente, la cantidad y el monto. Además, Colmena ofrece funcionalidades adicionales, como la capacidad de generar cotizaciones.`,
+    image: "./projects/colmena.webp",
+    tags: [TAGS.REACT,TAGS.MUI,TAGS.ELECTRON],
+  }, 
   {
     title: "ChordStandard - Aplicacion para musicos",
     href:"https://chordstandard.onrender.com/",
